@@ -1,0 +1,18 @@
+footer
+{
+	position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+#JumbotronID
+{
+	background: #e74c3c;
+    color: white;
+    padding: 0;
+}
+
+#JumbotronImage
+{
+	width: 100%;
+}
