@@ -1,0 +1,22 @@
+#HomeSection
+{
+	background: #e74c3c;
+    color: white;
+    padding: 0;
+}
+
+#JumbotronImage
+{
+	width: 100%;
+}
+
+.jumbotronTextOnImages
+{
+	position: absolute;
+	width: 100%;
+}
+
+#JumbotronHeading
+{
+	margin-top: 20%;
+}
