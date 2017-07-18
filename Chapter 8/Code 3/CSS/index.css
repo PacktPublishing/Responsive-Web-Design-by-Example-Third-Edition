@@ -1,0 +1,25 @@
+body
+{
+	padding-top: 56px;
+}
+
+.carouselImage
+{
+	width: 100%;
+	height: 100%;
+}
+
+.cardImage
+{
+	width: 100%;
+}
+
+.cardContainer
+{
+	margin-top: 10px;
+}
+
+#PostImageBanner
+{
+	width: 100%;
+}
