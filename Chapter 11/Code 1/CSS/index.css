@@ -1,0 +1,147 @@
+body
+{
+	padding-top: 56px;
+}
+
+#SidebarToggle
+{
+	color: white;
+}
+
+#sidebar
+{
+  overflow: hidden;
+  z-index: 3;
+}
+
+#sidebar .list-group
+{
+  background-color: #333;
+  min-height: 100vh;
+}
+
+#sidebar i
+{
+  margin-right: 6px;
+}
+
+#sidebar .list-group-item
+{
+  border-radius: 0;
+  background-color: #333;
+  color: #ccc;
+  border-left: 0;
+  border-right: 0;
+  border-color: #2c2c2c;
+  white-space: nowrap;
+}
+
+#sidebar .list-group-item:not(.collapsed)
+{
+  background-color: #222;
+}
+
+#sidebar .list-group .list-group-item[aria-expanded="false"]::after
+{
+  content: " \f0d7";
+  font-family: FontAwesome;
+  display: inline;
+  text-align: right;
+  padding-left: 5px;
+}
+
+#sidebar .list-group .list-group-item[aria-expanded="true"]
+{
+  background-color: #222;
+}
+
+#sidebar .list-group .list-group-item[aria-expanded="true"]::after
+{
+  content: " \f0da";
+  font-family: FontAwesome;
+  display: inline;
+  text-align: right;
+  padding-left: 5px;
+}
+
+#sidebar .list-group .collapse .list-group-item,
+#sidebar .list-group .collapsing .list-group-item 
+{
+  padding-left: 20px;
+}
+
+#sidebar .list-group .collapse > .collapse .list-group-item,
+#sidebar .list-group .collapse > .collapsing .list-group-item
+{
+  padding-left: 30px;
+}
+
+@media (max-width:768px)
+{
+    #sidebar
+    {
+      min-width: 35px;
+      max-width: 40px;
+      overflow-y: auto;
+      overflow-x: visible;
+      transition: all 0.25s ease;
+      transform: translateX(-45px);
+      position: fixed;
+    }
+    
+    #sidebar.show
+    {
+      transform: translateX(0);
+    }
+
+    #sidebar::-webkit-scrollbar
+    {
+    	width: 0px;
+    }
+    
+    #sidebar, #sidebar .list-group
+    {
+      min-width: 35px;
+      overflow: visible;
+    }
+
+    #sidebar .list-group .collapse.show, #sidebar .list-group .collapsing
+    {
+      position: relative;
+      z-index: 1;
+      width: 190px;
+      top: 0;
+    }
+    #sidebar .list-group > .list-group-item
+    {
+      text-align: center;
+      padding: .75rem .5rem;
+    }
+
+    #sidebar .list-group > .list-group-item[aria-expanded="true"]::after,
+    #sidebar .list-group > .list-group-item[aria-expanded="false"]::after
+    {
+      display:none;
+    }
+}
+
+#PostButtonContainer
+{
+	margin-top: 25px;
+}
+
+.postContainer
+{
+	margin-top: 10px;
+}
+
+.postThumbnail
+{
+	width: 100px;
+}
+
+.postMainBody
+{
+	margin-top: 15px;
+}
+
